@@ -296,10 +296,11 @@
       }
 
       .hero {
-        padding: 30px 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
       }
 
-      .hero>h1 {
+      h1 {
         font-size: 28px;
       }
 
@@ -325,6 +326,10 @@
         display: flex;
         flex-direction: column;
       }
+
+
+
+
     }
 
     /* =============================================
@@ -340,15 +345,11 @@
        - .footer-ust 2 kolonlu olsun
        ============================================= */
 
-    @media (max-width:601) and (max-width:1000px) {
+    @media (max-width:601px) and (max-width:1000px) {
       nav ul {
         gap: 15px;
       }
 
-      .yemek-karti {
-        display: flex;
-        flex-wrap: wrap;
-      }
 
       .hakkimizda {
         display: flex;
@@ -359,9 +360,22 @@
         width: 100%;
       }
 
-      .footer-ust {
+      footer {
         display: flex;
-        flex-direction: column;
+
+      }
+
+      footer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .footer-kolon {
+        width: 45%;
+      }
+
+      .yemek-karti {
+        width: 45%;
       }
     }
 
